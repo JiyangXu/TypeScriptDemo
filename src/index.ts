@@ -1,9 +1,6 @@
 import './style/index.less'
 
-import Food from "./modules/Food";
-import ScorePanel from "./modules/ScorePanel";
+import GameControl from "./modules/GameControl";
 
-const food =new Food();
-food.change()
+const gc = new GameControl();
 
-const scorePanel = new ScorePanel();
