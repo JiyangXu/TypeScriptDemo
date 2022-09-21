@@ -10,30 +10,28 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "@babel/core": "^7.19.1",
-    "bable-loader": "^0.0.1-security",
-    "clean-webpack-plugin": "^4.0.0",
-    "core-js": "^3.25.1",
-    "html-webpack-plugin": "^5.5.0",
-    "ts-loader": "^9.3.1",
-    "typescript": "^4.8.3",
-    "webpack": "^5.74.0",
-    "webpack-cli": "^4.10.0",
-    "webpack-dev-server": "^4.11.0"
-  },
   "devDependencies": {
+    "@babel/core": "^7.19.1",
     "@babel/preset-env": "^7.19.1",
     "@types/babel__core": "^7.1.19",
     "@types/babel__preset-env": "^7.9.2",
     "@types/webpack": "^5.28.0",
     "babel-loader": "^8.2.5",
+    "bable-loader": "^0.0.1-security",
+    "clean-webpack-plugin": "^4.0.0",
+    "core-js": "^3.25.2",
     "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
     "less": "^4.1.3",
     "less-loader": "^11.0.0",
     "postcss": "^8.4.16",
     "postcss-loader": "^7.0.1",
     "postcss-preset-env": "^7.8.2",
-    "style-loader": "^3.3.1"
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.4.1",
+    "typescript": "^4.8.3",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1"
   }
 }
