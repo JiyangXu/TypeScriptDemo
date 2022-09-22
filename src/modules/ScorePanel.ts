@@ -30,11 +30,4 @@ class ScorePanel{
     }
 }
 
-
-
-const scorePanel = new ScorePanel();
-for(let i=0; i<200;i++){
-    scorePanel.incrementalScore();
-}
-
 export default ScorePanel;
