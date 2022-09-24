@@ -9,6 +9,8 @@ class GameControl {
 
     direction: string = "";
 
+    isLive= true;
+
     constructor() {
         this.snake = new Snake();
         this.food = new Food();
@@ -51,11 +53,25 @@ class GameControl {
                 break;
         }
 
-        //    modify snake dirction
-        this.snake.X = X;
-        this.snake.Y = Y;
+        this.checkEat(X,Y);
+        //    modify snake direction
+        try{
+            this.snake.X = X;
+            this.snake.Y = Y;
+        }catch(e:unknown){
+            this.isLive=false;
+            if(e instanceof Error)
+                alert(e.message);
+        }
+        this.isLive && setTimeout(this.move.bind(this), 300 - (this.scorePanel.level-1) * 30)
+    }
 
-        setTimeout(this.move.bind(this), 300)
+    checkEat(X:number, Y:number){
+        if( X===this.food.X && Y===this.food.Y){
+            this.food.change();
+            this.scorePanel.incrementalScore();
+            this.snake.addBody();
+        }
     }
 }
 
